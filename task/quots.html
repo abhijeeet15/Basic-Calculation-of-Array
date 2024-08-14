@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <div id="view">
+        "If at first you don’t succeed, try, try again. W. E. Hickson"
+    </div>
+</div>
+<script>
+     let ka= [
+       " my name is abhijeet  ",
+       "Dream big, start small, shine bright.",
+       "Be the change you wish to see",
+       "Kindness is cool"
+
+     ];
+    function change()
+    {
+        let view= document.getElementById('view')
+        let velue=Math.floor(Math.random()*ka.length);
+        view.innerHTML=ka[velue]
+    }
+  
+    setInterval(change,1000)
+    
+    </script>
+</body>
+</html>
+
